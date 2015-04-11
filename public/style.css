@@ -77,7 +77,7 @@ tubular.js */
 
 .caption-container {
   min-height: 100%;
-  width: 30%;
+  width: 35%;
 }
 
 #external-links-font {
@@ -106,6 +106,7 @@ h1 {
 }
 
 h2, h3, h4 {
+  font-size: 2em;
   font-weight: 200;
   margin-bottom: 0.5em;
   color: black;

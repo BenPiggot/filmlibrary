@@ -1,0 +1,16 @@
+<% include partials/header %>
+<body id="search-page">
+<div class="search-div">
+  <h1 class="front-page-header">OMDB Movies Search</h1>
+  <p class="front-page-subhead"> Enter a search term in the field below</p>
+    <form class="form" action="/movies" method="get">
+        <div class="form-group">
+            <input id="front-page-input" type="text" name="q" placeholder="Search Movies">
+        </div>
+            <button type="search" values="Search" class="white-text btn btn-info" id="front-page-button">Search</button>
+    </form>
+</div>
+</body>
+
+
+<% include partials/footer %>

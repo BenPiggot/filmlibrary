@@ -1,0 +1,321 @@
+body {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+/*web audio api html5
+tubular.js */
+
+.front-a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#front-page {
+  color: white;
+  background-image: url("http://i.ytimg.com/vi/44gB58YS53A/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#search-page {
+  color: black;
+  background-image: url("http://cf.oesquema.com.br/wp-content/uploads/sites/18/2012/08/tumblr_lwoirjWpkG1r5fc00o1_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 5px solid white;
+}
+
+#list-background {
+ background-image: url("https://makethman.files.wordpress.com/2010/05/marcello2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+#show-page {
+ background-image: url("https://makethman.files.wordpress.com/2010/05/marcello2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.comments-page {
+/* background-image: url("http://feelgrafix.com/data_images/out/24/946624-classic-movie-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  background-color: #ccc;
+}
+
+#show-background {
+  background-color: #ccc;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  z-index: 10;
+}
+
+.search-div {
+  margin-left: 5%;
+  font-weight: 100;
+}
+
+.caption {
+  position: relative;
+  margin-top: 0;
+  height: 500px;
+  min-width: 100%;
+/*  background-color: rgba(0,0,0,0.5);*/
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+.caption-container {
+  min-height: 100%;
+  width: 30%;
+}
+
+#external-links-font {
+  font-size: 1.5em;
+}
+
+img {
+  margin-bottom: 1em;
+  margin-top: 2em;
+  height: auto;
+  width: 370px;
+}
+
+hr {
+  border-top: 0;
+  border-bottom: 1px solid #444;
+  margin-bottom: 1em;
+}
+
+nav {
+  color: #ddd;
+}
+
+h1 {
+  font-family: 'Oswald';
+}
+
+h2, h3, h4 {
+  font-weight: 200;
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  font-weight: 200;
+}
+
+li .search-terms {
+  padding-left: 3em;
+  padding-right: 3em;
+  color: white;
+}
+
+ul {
+  width: 90%;
+}
+
+ul .black-border {
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+/*.closing {
+  float: right;
+  margin-bottom: 2em;
+}*/
+
+.destroy-button {
+  font-size: 0.8em;
+  margin-top: -0.2em;
+  padding-bottom: 0.5em;
+}
+
+.comment-button {
+  font-size: 0.8em;
+  margin-top: -0.2em;
+  padding-bottom: 0.5em;
+}
+
+#fully-opaque {
+  opacity: 1;
+}
+
+#favorite {
+
+}
+
+#favorite-remove {
+  display: none;
+}
+
+.movie-style-nav {
+  color: white;
+  border-radius: 0;
+}
+
+.front-page-header {
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
+.show-page-header {
+  margin-bottom: -0.3em;
+}
+
+p .front-page-subhead {
+ margin-bottom: 2em;
+}
+
+#front-page-input {
+  color: black;
+}
+
+#front-page-button {
+  height: 2.3em;
+  padding-bottom: 0.8em;
+}
+
+.save-page {
+  text-align: center;
+  height: 3em;
+  line-height: 1em;
+  font-size: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.front-page-buttons {
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+}
+
+.favorites-button {
+  margin-left: 0.3em;
+
+}
+
+#ajax-query {
+  margin-bottom: 1em;
+}
+
+.return-home {
+  padding-top: .95em;
+}
+
+
+#director-header {
+  margin-top: -0.2em;
+  margin-bottom: 0em;
+}
+
+#year-header {
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+p .right-column {
+  margin-bottom: 2em;
+}
+
+.white-text {
+  color: white;
+  font-weight: 100;
+}
+
+#grey-text {
+  color: #ddd;
+  font-weight: 100;
+}
+
+#dark-grey-text {
+  color: #444;
+  font-weight: 100;
+}
+
+
+.right {
+  margin-top: 1.75em;
+  margin-left: 0em;
+
+}
+
+.left {
+  margin-right: 8em;
+
+}
+
+#description {
+  margin-top: 0em;
+  margin-bottom: -0.5em;
+}
+
+#info-top {
+  margin-top: 1em ;
+  margin-bottom: 1em;
+}
+
+.movie-info {
+  font-size: 1.5em;
+  border: 1px solid black;
+}
+
+.comment-box {
+  margin-bottom: 1em;
+}
+
+.comment-label {
+  font-weight: 400;
+}
+
+.comment-rule {
+  margin-bottom: 1.5em;
+}
+
+.comment-header {
+  margin-bottom: 0.5em;
+  font-weight: 100;
+  width: 80%;
+}
+
+.comment-footer {
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+  font-weight: 100;
+  width: 80%;
+}
+
+.comment-item {
+/*  border-radius: 5px;*/
+  margin-bottom: -0.1em;
+}
+
+.comment-block {
+  margin-top: 1em;
+  width: 80%;
+}
+
+#button-div {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.upper-margin-space {
+  margin-top: 2em;
+}
+
+.time-stamp {
+  text-align: right;
+  font-size: 0.7em;
+  margin-top: 2em;
+  margin-bottom: -0.7em;
+}
+
+

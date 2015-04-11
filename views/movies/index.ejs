@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+<body id="list-background">
+<div class="container">
+
+<h2>Search Results. <small class="white-text">Click on the imbd number for more information.</small></h2>
+<ul class="list-group black-border">
+      <% for (var i = 0; i < Search.length; i++) { %>
+          <ul class="list-group">
+             <li class="list-group-item">Title: <%= Search[i].Title %></li>
+             <li class="list-group-item">Year: <%= Search[i].Year %></li>
+             <li class="list-group-item">imdbID: <a href="/movies/<%=Search[i].imdbID%>"><%=Search[i].imdbID %></a></li>
+          </ul>
+        <% } %>
+    </ul>
+
+</div>
+</body>
+<% include ../partials/footer %>

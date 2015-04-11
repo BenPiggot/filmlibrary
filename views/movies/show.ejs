@@ -1,0 +1,63 @@
+<% include ../partials/header %>
+<body id="show-page">
+<div id="show-background" class="container">
+<!-- <div class="jumbotron"> -->
+<div class="col-md-12">
+  <h1 class="show-page-header"><%= Title%></h1>
+  <hr>
+</div>
+<div class="wrapper">
+<div class="col-md-4 left ">
+    <img src="<%= Poster %>">
+
+
+</div>
+    <div class="col-md-6 right">
+
+      <h3 id="description">Description</h3>
+      <p class="right"><%= Plot %><p>
+      <div id="info-top">
+        <h5 id="director-header">Director: <%= Director%></h3>
+        <h5 id="year-header">Year: <%= Year%></h5>
+        <h5 id="imbd-header">Imbd Rating: <%= imdbRating%></h5>
+        <h5 id="year-header">Metascore: <%= Metascore%></h5>
+        <h5 id="year-header">Tomato Meter: <%= tomatoMeter%></h5>
+      </div>
+      <form id="ajax-query" class="form" action="/favorites" method="post">
+        <input type="hidden" value="<%= imdbID %>" name="imdbID">
+        <input type="hidden" value="<%= Year %>" name="Year">
+        <input type="hidden" value="<%= Title %>" name="Title">
+        <input type="hidden" value="<%= Director %>" name="Director">
+        <input type="hidden" value="<%= imdbRating %>" name="imdbRating">
+        <input type="hidden" value="<%= Metascore %>" name="Metascore">
+        <input type="hidden" value="<%= tomatoMeter %>" name="tomatoMeter">
+        <input type="hidden" value="<%= Plot %>" name="Plot">
+        <input type="hidden" value="<%= Poster %>" name="Poster">
+        <% console.log(favorited); %>
+        <% if (favorited === false) { %>
+            <button id="favorite" class="btn btn-info save-page white-text">
+            Save as a Favorite</button>
+        <% } else { %>
+          <button id="favorite" class="btn btn-danger save-page white-text">
+          Remove as a Favorite</button>
+          <% } %>
+        <a href="/" class="btn btn-info save-page white-text return-home">
+          Return Home</a>
+        <a href="/search" class="btn btn-info save-page white-text return-home">
+          Return to Search</a>
+      </form>
+
+    </div>
+  </div>
+</div>
+</body>
+
+<!--
+      <div class="progress">
+        <div class="progress-bar progress-bar-inverse" role="progressbar" aria-valuenow="<%= tomatoMeter%>" aria-valuemin="0" aria-valuemax="100" style="width: <%= tomatoMeter%>%">
+          <span></span>Tomato Meter: <%= tomatoMeter%></span>
+        </div>
+      </div>
+    </div> -->
+
+<% include ../partials/footer %>

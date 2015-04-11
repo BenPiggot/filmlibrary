@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+<body id="list-background">
+<div class="container">
+<h2>Favorites List. <small class="white-text">Click on the imbd number to return to the movie's page.</small></h2>
+<ul class="list-group">
+      <% for (var i = 0; i < pageList.length; i++) { %>
+          <ul class="list-group black-border">
+            <li class="list-group-item">Title: <%= pageList[i].dataValues.Title %></li>
+            <li class="list-group-item">Director: <%= pageList[i].dataValues.Director%></li>
+            <li class="list-group-item">Year: <%= pageList[i].dataValues.Year %></li>
+            <li class="list-group-item">imdbID: <a href="/movies/<%=pageList[i].dataValues.imdbID%>"><%= pageList[i].dataValues.imdbID %></a></li>
+            <li class="list-group-item">
+            <button class="white-text btn btn-danger destroy-button" data="<%= pageList[i].dataValues.imdbID %>">Remove</button>
+            <a href="/favorites/<%= pageList[i].dataValues.id %>/comments" class="white-text btn btn-success comment-button">Add Comments</a>
+
+            </li>
+          </ul>
+        <% } %>
+    </ul>
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+</body>
+
+
+<% include ../partials/footer %>

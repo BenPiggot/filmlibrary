@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+<body class="comments-page">
+<div class="container">
+<div class="col-md-6">
+  <form action="/favorites/<%= favorite.id %>/comments" method="post">
+    <% console.log(favorite.imdbID) %>
+  <h2>Post a new comment</h2>
+    <div class="form-group">
+    <textarea type="text" id="body" data="<%=favorite.id%>" name="comment" class="form-control" placeholder="Post a new article"></textarea>
+    </div>
+    <input type="submit" class="white-text btn btn-info" value="Post">
+  </form>
+</div>
+</div>
+</body>
+
+
+<% include ../partials/footer %>

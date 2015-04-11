@@ -1,0 +1,31 @@
+<% include ../partials/header %>
+<body id="show-page">
+<div id="show-background" class="container">
+<h1 class="comment-header"><%=Title%>  Discussion Forum</h1>
+<!-- <hr class="comment-rule"> -->
+<div class="comment-block">
+  <% for (var i = 0; i < comments.length; i++) { %>
+      <li class="comment-item list-group-item comment-box"><%= comments[i].comment %>
+      <div class="time-stamp"><%=comments[i].createdAt%></div></li>
+  <% } %>
+</div>
+
+<!-- <hr class="comment-rule"> -->
+<div class="comment-footer">
+  <form action="/favorites/<%= id %>/comments" method="post">
+<!--   <h4 class="upper-margin-space comment-lab">Join the Conversation</h4> -->
+    <div class="form-group">
+    <textarea type="text" id="body" data="<%= id%>" name="comment" class="form-control" placeholder="Join the Conversation"></textarea>
+    </div>
+    <input type="hidden" value="<%= Title %>" name="Title">
+    <input type="submit" class="white-text btn btn-info" value="Post a Comment">
+    <a href="/favorites" class="white-text btn btn-info">Return to Favorites</a>
+    <a href="/" class="white-text btn btn-info">Return Home</a>
+  </form>
+</div>
+
+
+
+</div>
+</body>
+<% include ../partials/footer %>

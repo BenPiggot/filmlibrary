@@ -136,13 +136,13 @@ ul .black-border {
 }*/
 
 .destroy-button {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-top: -0.2em;
   padding-bottom: 0.5em;
 }
 
 .comment-button {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-top: -0.2em;
   padding-bottom: 0.5em;
 }
@@ -198,7 +198,7 @@ p .front-page-subhead {
 }
 
 .front-page-buttons {
-  margin-top: 0.7em;
+  margin-top: 1em;
   margin-bottom: 0.3em;
 }
 

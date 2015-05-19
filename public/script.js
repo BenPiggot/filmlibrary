@@ -29,7 +29,7 @@ $('button#favorite').on('click', function(e) {
   if ($('button#favorite').hasClass('btn-info')) {
     var myUrl = $('#ajax-query').attr('action');
     console.log(myUrl)
-
+    console.log($('.form').serialize())
     $.ajax({
         method: 'POST',
         url: myUrl,

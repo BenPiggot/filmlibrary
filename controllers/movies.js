@@ -27,6 +27,7 @@ router.get("/:id", function(req, res) {
   request(url, function (error, response, data) {
   if (!error || response.statusCode === 200) {
     var movies2 = JSON.parse(data);
+    console.log(movies2)
     db.favorite.find({where: {imdbID: movies2.imdbID}}).then(function(data2) {
     if (data2) {
       movies2.favorited = true;
@@ -39,6 +40,11 @@ router.get("/:id", function(req, res) {
   }
 });
 });
+
+// POSTER API KEY
+// apikey=2e7b9d74
+
+
 // router.get("/", function(req, res) {
 //   // res.send(req.query);
 //   var query = req.query.q

@@ -65,7 +65,6 @@ router.post('/:id/comments', function(req, res) {
                 res.redirect('/favorites/' + id + '/comments');
             });
         });
-
     });
 
 

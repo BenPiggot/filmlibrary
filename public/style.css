@@ -28,8 +28,8 @@ tubular.js */
   color: black;
   background-image: url("http://amaiahodge.com.es/wp-content/uploads/2015/02/Liv-persona-1.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  border-top: 5px solid white;
 }
 
 #list-background {

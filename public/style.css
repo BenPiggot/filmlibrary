@@ -134,10 +134,6 @@ ul .black-border {
   border-radius: 5px;
 }
 
-/*.closing {
-  float: right;
-  margin-bottom: 2em;
-}*/
 
 .destroy-button {
   font-size: 0.9em;
@@ -332,5 +328,14 @@ p .right-column {
     min-height: 100%;
     width: 60%;
   }
+
+  .white-text {
+    font-weight: 200;
+  }
+
+  #grey-text {
+    font-weight: 200;
+  }
+
 }
 

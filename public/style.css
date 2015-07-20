@@ -329,12 +329,12 @@ p .right-column {
     width: 60%;
   }
 
-  h2, h3, h4, h5 {
+  .white-text {
     font-weight: 300;
   }
 
-  .white-text {
-    font-weight: 300;
+  small > .white-text {
+    font-weight: 200;
   }
 
   #grey-text {

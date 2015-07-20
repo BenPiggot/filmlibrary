@@ -19,30 +19,33 @@ tubular.js */
 
 #front-page {
   color: white;
-  background-image: url("http://i.ytimg.com/vi/44gB58YS53A/maxresdefault.jpg");
+  background-image: url("./photos/taxi-driver.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #search-page {
   color: black;
-  background-image: url("http://amaiahodge.com.es/wp-content/uploads/2015/02/Liv-persona-1.jpg");
+  background-image: url("./photos/persona.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 #list-background {
- background-image: url("https://makethman.files.wordpress.com/2010/05/marcello2.jpg");
+ background-image: url("./photos/marcello.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   opacity: 0.9;
 }
 
 #show-page {
- background-image: url("https://makethman.files.wordpress.com/2010/05/marcello2.jpg");
+ background-image: url("./photos/marcello.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   opacity: 0.9;
 }
 

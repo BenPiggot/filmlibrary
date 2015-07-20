@@ -327,4 +327,10 @@ p .right-column {
   margin-bottom: -0.7em;
 }
 
+@media screen and (max-width: 700px) {
+  .caption-container {
+    min-height: 100%;
+    width: 60%;
+  }
+}
 
